@@ -32,7 +32,7 @@ jobs:
           IGNORE_PATTERN: beta
     outputs:
       is_beta: ${{ contains(github.ref, 'beta') }}
-      tag: ${{ steps.get_tag.outputs.tagname }}
+      tag: ${{ steps.get_tag.outputs.tag }}
       prev_tag: ${{ steps.get_prev_tag.outputs.prev_tag }}
       version: ${{ steps.get_version.outputs.version }}
 
